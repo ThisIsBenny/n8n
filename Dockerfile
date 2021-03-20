@@ -1,4 +1,4 @@
-FROM arm64v8/node:lts
+FROM node:lts
 
 RUN \
 	apt-get update && \
