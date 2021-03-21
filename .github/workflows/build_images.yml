@@ -2,8 +2,9 @@
 name: 'build images'
 
 on:
-  schedule:
-    - cron:  '0 0 1 * *'
+  repository_dispatch:
+    types: 
+      - build
 
 jobs:
   docker:
